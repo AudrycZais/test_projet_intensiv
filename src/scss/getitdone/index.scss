@@ -1,11 +1,5 @@
 // ./src/scss/getitdone/index.scss
 
-@import 'variables';
 
-
-body{
-    background-color: $color_primary;
-    font-family: $font_family;
-    font-size: $font_size;
-    color: $font_color;
-}
+@import './modules/init';
+@import './modules/colors';
