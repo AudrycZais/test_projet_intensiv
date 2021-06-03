@@ -1,5 +1,32 @@
 @import './getitdone/index.scss';
 
 body {
-    background: linear-gradient(to bottom, $color-4, $color-5);
+    background: radial-gradient(circle at top, $color-secondary  0%, $color-primary 10%)
+    
 }
+
+.main-header {
+
+}
+
+
+.main-content {
+    background: #FFFFFF;
+    padding: 2em;
+}
+
+.main-footer {
+
+}
+
+ul {
+    padding: 0;
+}
+
+.hr {
+    
+    border-bottom: 2px solid $color-section-separator;
+    margin: 2em 0;
+
+}
+

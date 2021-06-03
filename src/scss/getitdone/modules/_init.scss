@@ -1,5 +1,28 @@
+// CONTAINER WIDTH
+$s:     90%;
+$m:     85%;
+$l:     70%;
+$xl:    70%;
+
+// BREAKPOINTS
+
+$breakpoint-s:      0px;
+$breakpoint-m:    600px;
+$breakpoint-l:    992px;
+$breakpoint-xl:  1200px;
 
 
+$screen-sizes: (
+'s' : ('breakpoint': $breakpoint-s, 'container-width':$s),
+
+'m' : ('breakpoint': $breakpoint-m, 'container-width':$m),
+
+'l' : ('breakpoint': $breakpoint-l, 'container-width':$l),
+
+'xl': ('breakpoint': $breakpoint-xl, 'container-width':$xl)
+);
+
+//BOX-SIZING
 
 *{
     box-sizing: border-box;

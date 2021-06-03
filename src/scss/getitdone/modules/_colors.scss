@@ -1,7 +1,56 @@
 // COLORS
 
-    $color-1: #18BFEF;
-    $color-2: #F6F6F6;
-    $color-3: #717981;
-    $color-4: #4E403D;
-    $color-5: #212931;
+    $color-hover: #18BFEF;
+    $color-neutral-1: #F6F6F6;
+    $color-neutral-2: #717981;
+    $color-secondary: #4E403D;
+    $color-primary: #212931;
+    $color-section-separator: #EEEEEE;
+
+    .color-shades{
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .color-shade{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:  150px;
+            height: 150px;
+            padding: 2em;
+            margin: .5em;
+
+        }
+
+    }
+    
+
+    .hover{
+         background: $color-hover;
+    }
+
+    .neutral-1{
+        background: $color-neutral-1;
+
+    }
+
+    .neutral-2{
+        background: $color-neutral-2;
+    }
+
+    .secondary{
+        background: $color-secondary;
+    }
+
+    .primary{
+        background: $color-primary;
+    }
+
+    .section-seperator{
+        background: $color-section-separator;
+    }
+
+
+
+
