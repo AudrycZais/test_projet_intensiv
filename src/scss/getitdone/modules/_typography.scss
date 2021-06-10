@@ -1,11 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 
-body{
-    font-family: $font_family;
-    font-size:   $font_size;
-    color:       $font_color;
+// VARIABLES TYPOGRAPHY
+
+    //TEXT
+
+$text: 'Merriweather', Georgia, serif;;
+$font-color-text: $color-primary;
+$font-size-text: 1.1em;
+$font-size-s-text: 0.8em;
+$font-weight-text: 300;
+$line-height-text: 1.65;
+
+
+    //HEADERS
+
+$header: 'Source Sans Pro', sans-serif;
+$font-color-h1: $color-primary;
+$font-size-h1: 3rem;
+$font-weight-h1: 700;
+$line-height-h1: 1.2;
+$margin-h1: 0 0 .7em 0;
+$letter-spacing-h1: -.025rem;
+
+$font-color-h2: $color-primary;
+$font-size-h2: 2.2rem;
+$font-weight-h2: 700;
+$line-height-h2: 1.5;
+$margin-h2: 0 0 .7rem 0;
+$letter-spacing-h2: -.025rem;
+
+$font-color-h3: $color-primary;
+$font-size-h3: 1.75rem;
+$font-weight-h3: 700;
+$line-height-h3: 1.5;
+$margin-h3: 0 0 .7rem 0;
+$letter-spacing-h3: -.025rem;
+
+$font-color-h4: $color-primary;
+$font-size-h4: 1.5rem;
+$font-weight-h4: 700;
+$line-height-h4: 1.2;
+$margin-h4: 0 0 .7rem 0;
+$letter-spacing-h4: -.025rem;
+
+$font-color-h5: $color-primary;
+$font-size-h5: 1.3rem;
+$font-weight-h5: 700;
+$line-height-h5: 1.2;
+$margin-h5: 0 0 .7rem 0;
+$letter-spacing-h5: -.025rem;
+
+$font-color-h6: $color-primary;
+$font-size-h6: 1.2rem;
+$font-weight-h6: 700;
+$line-height-h6: 1.2;
+$margin-h6: 0 0 .7rem 0;
+$letter-spacing-h6: -.025rem;
+
+    //LINKS
+
+$link-color: $color-primary;
+$link-decoration: underline dotted;
+
+
+$link-hover-color: $color-hover;
+$link-hover-decoration: none;
+
+    //LIST
+
+$ul-padding: 10px;
+$ol-padding: 20px;
+
+    //CODE
+
+$code-color: $color-primary;
+$code-background: $color-neutral-1;
+$code-padding: .1em;
+$code-border: 1px solid $color-section-separator;
+
+
+    //HR
+
+$hr-boder-bottom: 2px solid $color-section-separator;
+$margin-hr: 2rem 0;
+
+
+//ICONS
+
+    //NORMAL
+
+$icon-size: 1rem;
+$icon-size-from-m: 1.3rem;
+$icon-width: 30px;
+$icon-width-from-m: 40px;
+$icon-height: 30px;
+$icon-height-from-m: 40px;
+
+
+
+                //CIRCLED
+
+            $icon-circled-size: .8rem;
+            $icon-circled-border: 2px solid $color-section-separator;
+            $icon-circled-border-hover: 2px solid $color-hover;
+            $icon-circled-border-radius: 50%;
+
+
+//DEFITION
+
+$definition-padding: 0 0 2rem 2rem;
+
+// BLOCKQUOTE
+
+$quote-border-left: 4px solid $color-section-separator;
+$quote-padding: 1rem 0 1rem 2rem;
+
+
+
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+
+
+// SPECIFICATIONS
+
+
+
+//CONTAINER
+
+
+
+body, .default{
+    font-family: $text;
+    font-size: $font-size-s-text;
+    @media screen and (min-width: map-get($screen-sizes, "m", 'breakpoint')) {
+        font-size: $font-size-text;
+              
+    }
+    font-weight: $font-weight-text;
+    line-height: $line-height-text;
 }
 
-h1, .h1 {
-    font-size: 2em;
+section{
+    margin: 2rem 0;
 }
+
+//LISTS
+
+    //UL
+.ul{
+    
+    list-style: inside;
+    padding-left: $ul-padding;
+    &.alternate{
+        list-style: inside;
+    }
+}
+
+
+
+    //OL
+
+.ol{
+    padding: $ol-padding;
+}
+
+
+
+//ICONS
+
+.icon{
+
+    font-size: $icon-size;
+    width: $icon-width;
+    height: $icon-height;
+    @media screen and (min-width: map-get($screen-sizes, "m", 'breakpoint')) {
+        font-size: $icon-size-from-m;
+        width: $icon-width-from-m;
+        height: $icon-height-from-m ; 
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    text-decoration: none;
+
+    &.circled{
+
+        border: $icon-circled-border;
+        border-radius: $icon-circled-border-radius;
+
+        &:hover{
+            border: $icon-circled-border-hover;
+        }
+    
+    }
+}
+
+
+
+
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+
+
+
+// LINKS
+a, .link{
+    color: $link-color;
+    text-decoration: $link-decoration;
+    &:hover{
+        color:$link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}
+
+//HR
+
+.hr {
+    
+    border-bottom: 2px solid $color-section-separator;
+    margin: 2em 0;
+
+}
+
+//CODE
+
+code {
+    color: $code-color;
+    background: $code-background;
+    padding: $code-padding;
+    border: $code-border;
+}
+
+
+//BLOCKQUOTE
+
+.quote{
+    border-left: $quote-border-left;
+    padding: $quote-padding;
+}
+
+//DEFINITION
+
+.definition{
+    padding: $definition-padding;
+}
+
+
+
+//HEADERS
+
+
+h1,.h1 {
+    font-family: $header;
+    color:$font-color-h1;
+    font-size: $font-size-h1;
+    font-weight: $font-weight-h1;
+    line-height: $line-height-h1;
+    margin: $margin-h1;
+    letter-spacing:  $letter-spacing-h1;
+    
+}
+
+h2,.h2 {
+    font-family: $header;
+    color:$font-color-h2;
+    font-size: $font-size-h2;
+    font-weight: $font-weight-h2;
+    line-height: $line-height-h2;
+    margin: $margin-h2;
+    letter-spacing:  $letter-spacing-h2;
+}
+
+h3,.h3{
+    font-family: $header;
+    color:$font-color-h3;
+    font-size: $font-size-h3;
+    font-weight: $font-weight-h3;
+    line-height: $line-height-h3;
+    margin: $margin-h3;
+    letter-spacing:  $letter-spacing-h3;
+}
+
+h4,.h4{
+    font-family: $header;
+    color:$font-color-h4;
+    font-size: $font-size-h4;
+    font-weight: $font-weight-h4;
+    line-height: $line-height-h4;
+    margin: $margin-h4;
+    letter-spacing:  $letter-spacing-h4;
+}
+
+
+h5,.h5{
+    font-family: $header;
+    color:$font-color-h5;
+    font-size: $font-size-h5;
+    font-weight: $font-weight-h5;
+    line-height: $line-height-h5;
+    margin: $margin-h5;
+    letter-spacing:  $letter-spacing-h5;
+}
+
+h6,.h6{
+    font-family: $header;
+    color:$font-color-h6;
+    font-size: $font-size-h6;
+    font-weight: $font-weight-h6;
+    line-height: $line-height-h6;
+    margin: $margin-h6;
+    letter-spacing:  $letter-spacing-h6;
+}
+
+
+
+
+

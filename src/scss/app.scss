@@ -1,7 +1,7 @@
 @import './getitdone/index.scss';
 
 body {
-    background: radial-gradient(circle at top, $color-secondary  0%, $color-primary 10%)
+    background: radial-gradient(circle at top, $color-secondary  0%, $color-primary 10%);
     
 }
 
@@ -11,7 +11,7 @@ body {
 
 
 .main-content {
-    background: #FFFFFF;
+    background: $color-container;
     padding: 2em;
 }
 
@@ -21,12 +21,12 @@ body {
 
 ul {
     padding: 0;
+    list-style: none;
 }
 
-.hr {
-    
-    border-bottom: 2px solid $color-section-separator;
-    margin: 2em 0;
-
+.footer{
+    text-align: center;
+    padding: 3em 0 3em 0;
+    color: $color-neutral-2;
 }
 

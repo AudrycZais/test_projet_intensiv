@@ -1,5 +1,4 @@
-@use "sass:map";
-
+//CONTAINER
 @each $size, $values in $screen-sizes {
     @media screen and (min-width: map-get($values, 'breakpoint')) {
         .container{
@@ -10,6 +9,43 @@
           
     }
 }
+
+//VARIABLES
+
+$pre-background: $color-neutral-1;
+$pre-border: 2px solid $color-section-separator;
+
+//TEXT-ALIGNMENTS
+
+.text-center{
+    text-align: center;
+
+}
+
+.text-left{
+    text-align: left;
+    
+}
+
+.text-right{
+    text-align: right;
+    
+}
+
+.text-justify{
+    text-align: justify;
+    
+}
+
+//PREFORMATED
+
+pre{
+    background: $pre-background;
+    border: $pre-border;
+}
+
+
+
 
 
 

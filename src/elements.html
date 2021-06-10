@@ -12,7 +12,7 @@
 
 <body class="container">
     <header class="main-header">
-        <h1>Intensiv'</h1>
+        <h1 class="text-center">Intensiv'</h1>
         <nav>
             <ul>
 
@@ -44,6 +44,7 @@
             <h2>COLORS</h2>
             <div class="color-shades">
                 <div class="color-shade hover">#18BFEF</div>
+                <div class="color-shade active">#18BFEF</div>
                 <div class="color-shade neutral-1">#F6F6F6</div>
                 <div class="color-shade neutral-2">#717981</div>
                 <div class="color-shade secondary">#4E403D</div>
@@ -60,7 +61,7 @@
             <h3>#212931</h3>
 
             <p>
-                This is <strong>strong</strong>. This is <em>emphasized</em>.
+                This is <b>bold</b> and this is <strong>strong</strong>. This is <em>emphasized</em>.
                 This <sup>superscript</sup> text this <sub>subscript.
                     <span class="underlined">underlined</span> and this is code: <code>for (;;){...}</code>.
                     Finally, this is a <a href="">link</a>.
@@ -73,12 +74,12 @@
         <section>
 
             <h2>HEADERS - "SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931 </h2>
-            <span class="h1">HEADING LEVEL 1</span>
-            <span class="h2">HEADING LEVEL 2</span>
-            <span class="h3">HEADING LEVEL 3</span>
-            <span class="h4">HEADING LEVEL 4</span>
-            <span class="h5">HEADING LEVEL 5</span>
-            <span class="h6">HEADING LEVEL 6</span>
+            <div class="h1">HEADING LEVEL 1</div>
+            <div class="h2">HEADING LEVEL 2</div>
+            <div class="h3">HEADING LEVEL 3</div>
+            <div class="h4">HEADING LEVEL 4</div>
+            <div class="h5">HEADING LEVEL 5</div>
+            <div class="h6">HEADING LEVEL 6</div>
 
         </section>
 
@@ -125,22 +126,21 @@
         <div class="hr"></div>
 
         <div>
+            <h3>LISTS</h3>
             <section>
-
-                <h3>LISTS</h3>
 
                 <h4>UNORDERED - UL</h4>
 
-                <ul>
+                <ul class="ul">
                     <li>Dolor pulvinar etiam</li>
                     <li>Sagittis lorem eleifend</li>
                     <li>Felis feugiat dolore</li>
                     <li>Dolor pulvinar etiam</li>
                 </ul>
 
-                <h3>ALTERNATE - UL.ALTERNATE</h3>
+                <h4>ALTERNATE - UL.ALTERNATE</h4>
 
-                <ul>
+                <ul class="ul alternate">
                     <li>Dolor pulvinar etiam</li>
                     <li>Sagittis lorem eleifend</li>
                     <li>Felis feugiat dolore</li>
@@ -148,7 +148,7 @@
                 </ul>
 
                 <h4>ORDERED</h4>
-                <ol>
+                <ol class="ol">
                     <li>Dolor pulvinar etiam</li>
                     <li>Sagittis lorem eleifend</li>
                     <li>Felis feugiat dolore</li>
@@ -158,81 +158,62 @@
 
             </section>
 
+            <section>
 
-            <div>
-                <div><i class="fab fa-twitter"></i></div>
-                <div><i class="fab fa-facebook-f"></i></div>
-                <div><i class="fab fa-instagram"></i></div>
-                <div><i class="fab fa-github"></i></div>
-                <div><i class="fab fa-dribbble"></i></div>
-            </div>
+                <h4>ICONS</h4>
 
-            <div>
-                <div><i class="fab fa-twitter"></i></div>
-                <div><i class="fab fa-facebook-f"></i></div>
-                <div><i class="fab fa-instagram"></i></div>
-                <div><i class="fab fa-github"></i></div>
-                <div><i class="fab fa-dribbble"></i></div>
-            </div>
+                <div class="flex">
+                    <a class="icon"><i class="fab fa-twitter"></i></a>
+                    <a class="icon"><i class="fab fa-facebook-f"></i></a>
+                    <a class="icon"><i class="fab fa-instagram"></i></a>
+                    <a class="icon"><i class="fab fa-github"></i></a>
+                    <a class="icon"><i class="fab fa-dribbble"></i></a>
+                </div>
+
+                <div class="flex">
+                    <a class=" icon circled"><i class="fab fa-twitter"></i></a>
+                    <a class=" icon circled"><i class="fab fa-facebook-f"></i></a>
+                    <a class=" icon circled"><i class="fab fa-instagram"></i></a>
+                    <a class=" icon circled"><i class="fab fa-github"></i></a>
+                    <a class=" icon circled"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </section>
+
+            <section>
+
+                <h3>DEFINITION</h3>
+                <h4>Item 1</h4>
+                <p class="definition">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem, reiciendis? Asperiores doloremque obcaecati maxime,
+                    eos, deleniti est assumenda aliquid dolor nobis distinctio quasi officia
+                    reprehenderit rerum aperiam blanditiis odio numquam.
+                </p>
+                <h4>Item 2</h4>
+                <p class="definition">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem, reiciendis? Asperiores doloremque obcaecati maxime,
+                    eos, deleniti est assumenda aliquid dolor nobis distinctio quasi officia
+                    reprehenderit rerum aperiam blanditiis odio numquam.
+                </p>
+                <h4>Item 3</h4>
+                <p class="definition">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem, reiciendis? Asperiores doloremque obcaecati maxime,
+                    eos, deleniti est assumenda aliquid dolor nobis distinctio quasi officia
+                    reprehenderit rerum aperiam blanditiis odio numquam.
+                </p>
+
+            </section>
 
         </div>
 
-        <section>
-
-            <h3>DEFINITION</h3>
-            <h4>Item 1</h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, reiciendis? Asperiores doloremque obcaecati maxime,
-                eos, deleniti est assumenda aliquid dolor nobis distinctio quasi officia
-                reprehenderit rerum aperiam blanditiis odio numquam.
-            </p>
-            <h4>Item 2</h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, reiciendis? Asperiores doloremque obcaecati maxime,
-                eos, deleniti est assumenda aliquid dolor nobis distinctio quasi officia
-                reprehenderit rerum aperiam blanditiis odio numquam.
-            </p>
-            <h4>Item 3</h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, reiciendis? Asperiores doloremque obcaecati maxime,
-                eos, deleniti est assumenda aliquid dolor nobis distinctio quasi officia
-                reprehenderit rerum aperiam blanditiis odio numquam.
-            </p>
-
-        </section>
-
-
-        <section>
-            <h2>ACTIONS</h2>
-
-            <div>PRIMARY</div>
-            <div>DEFAULT</div>
-
-            <div>SMALL</div>
-            <div>SMALL</div>
-
-            <div>DEFAULT</div>
-            <div>DEFAULT</div>
-
-            <div>SMALL</div>
-            <div>SMALL</div>
-
-            <div>DEFAULT</div>
-            <div>DEFAULT</div>
-
-            <div>SMALL</div>
-            <div>SMALL</div>
-
-        </section>
 
         <div class="hr"></div>
 
         <section>
             <h2>BLOCKQUOTE</h2>
-            <p>
+            <p class="quote">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Exercitationem, reiciendis? Asperiores doloremque obcaecati maxime,
                 eos, deleniti est assumenda aliquid dolor nobis distinctio quasi officia
@@ -251,12 +232,12 @@
             <h2>TABLE</h2>
             <h3>DEFAULT</h3>
 
-            <table>
+            <table class="table-default">
                 <thead>
                     <tr>
-                        <th>NAME</th>
-                        <th>DESCRIPTION</th>
-                        <th>PRICE</th>
+                        <th class="h5">NAME</th>
+                        <th class="h5">DESCRIPTION</th>
+                        <th class="h5">PRICE</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -289,23 +270,27 @@
                         <td>Lorem ipsum, dolor sit amet consectetur adipisicing.</td>
                         <td>29.99</td>
                     </tr>
-
+                </tbody>
+                <tfoot>
                     <tr>
+                        <td></td>
+                        <td></td>
                         <td>100</td>
                     </tr>
+                </tfoot>
 
 
-                </tbody>
+                
             </table>
 
             <h3>ALTERNATE</h3>
 
-            <table>
+            <table class="alternate">
                 <thead>
                     <tr>
-                        <th>NAME</th>
-                        <th>DESCRIPTION</th>
-                        <th>PRICE</th>
+                        <th class="h5">NAME</th>
+                        <th class="h5">DESCRIPTION</th>
+                        <th class="h5">PRICE</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -338,13 +323,17 @@
                         <td>Lorem ipsum, dolor sit amet consectetur adipisicing.</td>
                         <td>29.99</td>
                     </tr>
-
+                </tbody>
+                <tfoot>
                     <tr>
+                        <td></td>
+                        <td></td>
                         <td>100</td>
                     </tr>
+                </tfoot>
 
 
-                </tbody>
+                
             </table>
         </section>
 
@@ -352,25 +341,36 @@
 
         <section>
             <h2>BUTTONS</h2>
+            <div>
+                <div class="btn primary">PRIMARY</div>
+                <div class="btn default">DEFAULT</div>
+            </div>
 
-            <div>PRIMARY</div>
-            <div>DEFAULT</div>
+            <div>
+                <div class="btn primary large">LARGE</div>
+                <div class="btn default">DEFAULT</div>
+                <div class="btn default small">SMALL</div>
+            </div>
 
-            <div>LARGE</div>
-            <div>DEFAULT</div>
-            <div>SMALL</div>
+            <div>
+                <div class="btn primary fit">FIT</div>
+                <div class="btn default fit">FIT</div>
+            </div>
 
-            <div>FIT</div>
-            <div>FIT</div>
+            <div>
+                <div class="btn primary fit small">FIT+SMALL</div>
+                <div class="btn default fit small">FIT+SMALL</div>
+            </div>
 
-            <div>FIT+SMALL</div>
-            <div>FIT+SMALL</div>
+            <div>
+                <div class="btn primary"><i class="fas fa-search"></i>ICON</div>
+                <div class="btn default"><i class="fas fa-download"></i>ICON</div>
+            </div>
 
-            <div><i class="fas fa-search"></i>ICON</div>
-            <div><i class="fas fa-download"></i>ICON</div>
-
-            <div>PRIMARY</div>
-            <div>DEFAULT</div>
+            <div>
+                <div class="btn primary inactive">PRIMARY</div>
+                <div class="btn default inactive">DEFAULT</div>
+            </div>
 
         </section>
 
@@ -382,9 +382,9 @@
             <form action="submit">
                 <div>
                     <label for="thisname"></label>
-                    <input type="text" id="thisname" placeholder="Name">
+                    <input class="input name" type="text" id="thisname" placeholder="Name">
                     <label for="thisemail"></label>
-                    <input type="email" id="thisemail">
+                    <input class="input email" type="email" id="thisemail" placeholder="Email">
                 </div>
 
                 <div>
@@ -416,14 +416,14 @@
                 </div>
                 <div>
                     <label for="thistext"></label>
-                    <textarea name="thistext" id="thistext" cols="30" rows="10"
+                    <textarea class="input" name="thistext" id="thistext" cols="30" rows="10"
                         placeholder="Enter your message"></textarea>
                 </div>
 
                 <div>
-                    <button type="submit">SUBMIT</button>
+                    <button class="btn primary " type="submit">SEND MESSAGE</button>
 
-                    <button type="reset">RESET</button>
+                    <button class="btn secondary" type="reset">RESET</button>
                 </div>
             </form>
         </section>
@@ -604,17 +604,17 @@
             <div>
 
                 <pre>
-                        i=0;
+i=0;
 
-                        while (!deck.isInOrder()) {
-                            print 'Iteration ' + i;
-                            deck.shuffle();
-                            i++;
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
     
-                        }
-                            
-                        print 'It took ' + i + ' iterations to sort'
-                    </pre>
+}
+    
+print 'It took ' + i + ' iterations to sort'
+                </pre>
 
             </div>
 
@@ -703,7 +703,7 @@
 
 
     <footer>
-        &copy; UNTITLED | DESIGN <a class="" href="https://www.promotion-sociale.be/">IEPS</a>
+        <div class="footer">&copy; UNTITLED | DESIGN <a class="" href="https://www.promotion-sociale.be/">IEPS</a></div>
     </footer>
 
 

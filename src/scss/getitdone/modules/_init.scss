@@ -1,25 +1,15 @@
-// CONTAINER WIDTH
-$s:     90%;
-$m:     85%;
-$l:     70%;
-$xl:    70%;
-
-// BREAKPOINTS
-
-$breakpoint-s:      0px;
-$breakpoint-m:    600px;
-$breakpoint-l:    992px;
-$breakpoint-xl:  1200px;
+@use "sass:map";
+// BREAKPOINTS AND CONTAINER WIDTH
 
 
 $screen-sizes: (
-'s' : ('breakpoint': $breakpoint-s, 'container-width':$s),
+'s' : ('breakpoint': 0px, 'container-width':90%),
 
-'m' : ('breakpoint': $breakpoint-m, 'container-width':$m),
+'m' : ('breakpoint': 600px, 'container-width':85%),
 
-'l' : ('breakpoint': $breakpoint-l, 'container-width':$l),
+'l' : ('breakpoint': 992px, 'container-width':70%),
 
-'xl': ('breakpoint': $breakpoint-xl, 'container-width':$xl)
+'xl': ('breakpoint': 1200px, 'container-width':70%)
 );
 
 //BOX-SIZING
@@ -28,3 +18,24 @@ $screen-sizes: (
     box-sizing: border-box;
 }
 
+// DISPLAY SECTION
+
+.block{
+    display:block
+}
+
+.inline-block{
+    display:inline-block
+}
+
+.hidden{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}

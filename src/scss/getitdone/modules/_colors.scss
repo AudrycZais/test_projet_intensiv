@@ -1,11 +1,17 @@
-// COLORS
+// COLORS VARIABLES
 
     $color-hover: #18BFEF;
+    $color-active: #10667e;
     $color-neutral-1: #F6F6F6;
     $color-neutral-2: #717981;
     $color-secondary: #4E403D;
     $color-primary: #212931;
     $color-section-separator: #EEEEEE;
+    $color-container: #FFFFFF;
+
+// COLORS DIMENSIONS
+
+$color-shade-dim: 100px;
 
     .color-shades{
 
@@ -16,40 +22,46 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width:  150px;
-            height: 150px;
+            width:  $color-shade-dim;
+            height: $color-shade-dim;
             padding: 2em;
-            margin: .5em;
+            margin: 3px;
+
+            &.hover{
+                background: $color-hover;
+           }
+
+           &.active{
+               background: $color-active;
+           }
+       
+           &.neutral-1{
+               background: $color-neutral-1;
+       
+           }
+       
+           &.neutral-2{
+               background: $color-neutral-2;
+           }
+       
+           &.secondary{
+               background: $color-secondary;
+           }
+       
+           &.primary{
+               background: $color-primary;
+           }
+       
+           &.section-seperator{
+               background: $color-section-separator;
+           }
 
         }
 
     }
     
 
-    .hover{
-         background: $color-hover;
-    }
-
-    .neutral-1{
-        background: $color-neutral-1;
-
-    }
-
-    .neutral-2{
-        background: $color-neutral-2;
-    }
-
-    .secondary{
-        background: $color-secondary;
-    }
-
-    .primary{
-        background: $color-primary;
-    }
-
-    .section-seperator{
-        background: $color-section-separator;
-    }
+    
 
 
 
