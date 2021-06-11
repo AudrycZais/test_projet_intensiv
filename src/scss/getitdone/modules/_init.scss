@@ -5,11 +5,11 @@
 $screen-sizes: (
 's' : ('breakpoint': 0px, 'container-width':90%),
 
-'m' : ('breakpoint': 600px, 'container-width':80%),
+'m' : ('breakpoint': 600px, 'container-width':90%),
 
-'l' : ('breakpoint': 992px, 'container-width':75%),
+'l' : ('breakpoint': 992px, 'container-width':90%),
 
-'xl': ('breakpoint': 1200px, 'container-width':70%)
+'xl': ('breakpoint': 1200px, 'container-width':90%)
 );
 
 //BOX-SIZING
@@ -44,5 +44,7 @@ $screen-sizes: (
 }
 
 .wrap{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }

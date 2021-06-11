@@ -10,42 +10,42 @@
     <link rel="stylesheet" href="./scss/app.scss">
 </head>
 
-<body class="container">
-    <header>
+<body>
+    <header class="container">
         <h1 class="text-center">Intensiv'</h1>
         
     </header>
 
-    <main>
+    <main class="container">
         <header class="main-header container">
-            <nav>
-                <ul>
+            <nav class="menu">
+                <ul class="links">
     
-                    <li><a href=""></a>THIS IS INTENSIV'</li>
-                    <li><a href=""></a>GENERIC PAGE</li>
-                    <li><a href=""></a>ELEMENTS REFERENCE</li>
+                    <li><a class="link" href="">This is Intensiv'</a></li>
+                    <li><a class="link" href="">Generic Page</a></li>
+                    <li><a class="link active" href="">Elements Reference</a></li>
     
                 </ul>
     
-                <ul>
+                <ul class="socials">
     
-                    <li><a href=""></a><i class="fab fa-twitter"></i></li>
-                    <li><a href=""></a><i class="fab fa-facebook-f"></i></li>
-                    <li><a href=""></a><i class="fab fa-instagram"></i></li>
-                    <li><a href=""></a><i class="fab fa-github"></i></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
     
                 </ul>
             </nav>
         </header>
         <div class="main-content container">
             <header>
-                <h2>ELEMENTS REFERENCE</h2>
+                <h2 class="h1 text-center"><span class="block">Elements</span><span class="block">Reference</span></h2>
             </header>
 
 
 
             <section>
-                <h2>COLORS</h2>
+                <h2>Colors</h2>
                 <div class="color-shades">
                     <div class="color-shade hover">#18BFEF</div>
                     <div class="color-shade active">#18BFEF</div>
@@ -60,7 +60,7 @@
             <div class="hr"></div>
 
             <section>
-                <h2>TEXT -"MERRIWEATHER", GEORIGIA, SERIF |</h2>
+                <h2>Text -"MERRIWEATHER", GEORIGIA, SERIF |</h2>
 
                 <h3>#212931</h3>
 
@@ -68,7 +68,7 @@
                     This is <b>bold</b> and this is <strong>strong</strong>. This is <em>emphasized</em>.
                     This <sup>superscript</sup> text this <sub>subscript.
                         <span class="underlined">underlined</span> and this is code: <code>for (;;){...}</code>.
-                        Finally, this is a <a href="">link</a>.
+                        Finally, this is a <a class="link" href="">link</a>.
                     </sub>
                 </p>
             </section>
@@ -77,7 +77,7 @@
 
             <section>
 
-                <h2>HEADERS - "SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931 </h2>
+                <h2>Headers - "SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931 </h2>
                 <div class="h1">HEADING LEVEL 1</div>
                 <div class="h2">HEADING LEVEL 2</div>
                 <div class="h3">HEADING LEVEL 3</div>
@@ -90,7 +90,7 @@
             <div class="hr"></div>
 
             <section>
-                <h3 class="h3">HEADING WITH A SUBTITLE</h3>
+                <h3 class="h3">Heading with subtitle</h3>
                 <div class="subtitle"> Lorem ipsum dolor sit amet consectetur.</div>
                 <div>
                     <p>
@@ -101,7 +101,7 @@
                     </p>
                 </div>
 
-                <h3 class="h3">HEADING WITH A SUBTITLE</h3>
+                <h3 class="h3">Heading with subtitle</h3>
                 <div class="subtitle"> Lorem ipsum dolor sit amet consectetur.</div>
                 <div>
                     <p>
@@ -112,7 +112,7 @@
                     </p>
                 </div>
 
-                <h3 class="h3">HEADING WITH A SUBTITLE</h3>
+                <h3 class="h3">Heading with subtitle</h3>
 
                 <div class="subtitle"> Lorem ipsum dolor sit amet consectetur.</div>
 
@@ -131,61 +131,62 @@
 
             <div>
                 <h3>LISTS</h3>
-                <section>
+                <section class="wrap">
+                    <div class="list">
+                        <h4>Unordered - ul</h4>
 
-                    <h4>UNORDERED - UL</h4>
+                        <ul class="ul">
+                            <li>Dolor pulvinar etiam</li>
+                            <li>Sagittis lorem eleifend</li>
+                            <li>Felis feugiat dolore</li>
+                            <li>Dolor pulvinar etiam</li>
+                        </ul>
+                    
+                        <h4>Alternate - ul.alternate</h4>
 
-                    <ul class="ul">
-                        <li>Dolor pulvinar etiam</li>
-                        <li>Sagittis lorem eleifend</li>
-                        <li>Felis feugiat dolore</li>
-                        <li>Dolor pulvinar etiam</li>
-                    </ul>
+                        <ul class="ul alternate">
+                            <li>Dolor pulvinar etiam</li>
+                            <li>Sagittis lorem eleifend</li>
+                            <li>Felis feugiat dolore</li>
+                            <li>Dolor pulvinar etiam</li>
+                        </ul>
+                    </div>
 
-                    <h4>ALTERNATE - UL.ALTERNATE</h4>
+                    <div>
+                        <h4>Ordered</h4>
 
-                    <ul class="ul alternate">
-                        <li>Dolor pulvinar etiam</li>
-                        <li>Sagittis lorem eleifend</li>
-                        <li>Felis feugiat dolore</li>
-                        <li>Dolor pulvinar etiam</li>
-                    </ul>
+                        <ol class="ol">
+                            <li>Dolor pulvinar etiam</li>
+                            <li>Sagittis lorem eleifend</li>
+                            <li>Felis feugiat dolore</li>
+                            <li>Dolor pulvinar etiam</li>
+                            <li>Elis enim et tempus</li>
+                        </ol>
+                    
 
-                    <h4>ORDERED</h4>
-                    <ol class="ol">
-                        <li>Dolor pulvinar etiam</li>
-                        <li>Sagittis lorem eleifend</li>
-                        <li>Felis feugiat dolore</li>
-                        <li>Dolor pulvinar etiam</li>
-                        <li>Elis enim et tempus</li>
-                    </ol>
+                        <h4>Icons</h4>
 
+                        <div class="flex">
+                            <a class="icon"><i class="fab fa-twitter"></i></a>
+                            <a class="icon"><i class="fab fa-facebook-f"></i></a>
+                            <a class="icon"><i class="fab fa-instagram"></i></a>
+                            <a class="icon"><i class="fab fa-github"></i></a>
+                            <a class="icon"><i class="fab fa-dribbble"></i></a>
+                        </div>
+
+                        <div class="flex">
+                            <a class=" icon circled"><i class="fab fa-twitter"></i></a>
+                            <a class=" icon circled"><i class="fab fa-facebook-f"></i></a>
+                            <a class=" icon circled"><i class="fab fa-instagram"></i></a>
+                            <a class=" icon circled"><i class="fab fa-github"></i></a>
+                            <a class=" icon circled"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
                 </section>
 
                 <section>
 
-                    <h4>ICONS</h4>
-
-                    <div class="flex">
-                        <a class="icon"><i class="fab fa-twitter"></i></a>
-                        <a class="icon"><i class="fab fa-facebook-f"></i></a>
-                        <a class="icon"><i class="fab fa-instagram"></i></a>
-                        <a class="icon"><i class="fab fa-github"></i></a>
-                        <a class="icon"><i class="fab fa-dribbble"></i></a>
-                    </div>
-
-                    <div class="flex">
-                        <a class=" icon circled"><i class="fab fa-twitter"></i></a>
-                        <a class=" icon circled"><i class="fab fa-facebook-f"></i></a>
-                        <a class=" icon circled"><i class="fab fa-instagram"></i></a>
-                        <a class=" icon circled"><i class="fab fa-github"></i></a>
-                        <a class=" icon circled"><i class="fab fa-dribbble"></i></a>
-                    </div>
-                </section>
-
-                <section>
-
-                    <h3>DEFINITION</h3>
+                    <h3>Definition</h3>
                     <h4>Item 1</h4>
                     <p class="definition">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -216,7 +217,7 @@
             <div class="hr"></div>
 
             <section>
-                <h2>BLOCKQUOTE</h2>
+                <h3>Blockquote</h3>
                 <p class="quote">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Exercitationem, reiciendis? Asperiores doloremque obcaecati maxime,
@@ -233,8 +234,8 @@
 
             <section>
 
-                <h2>TABLE</h2>
-                <h3>DEFAULT</h3>
+                <h3>Table</h3>
+                <h4>Default</h4>
 
                 <div>
 
@@ -290,7 +291,7 @@
                     </table>
                 </div>
 
-                <h3>ALTERNATE</h3>
+                <h4>Alternate</h4>
                 <div>
                     <table class="alternate">
                         <thead>
@@ -348,7 +349,7 @@
             <div class="hr"></div>
 
             <section>
-                <h2>BUTTONS</h2>
+                <h3>Buttons</h3>
                 <div>
                     <div class="btn primary">PRIMARY</div>
                     <div class="btn secondary">DEFAULT</div>
@@ -386,7 +387,7 @@
 
             <section>
 
-                <h2>FORM</h2>
+                <h3>Form</h3>
                 <form action="submit">
                     <div class="flex input-box">
                         <label for="thisname"></label>
@@ -451,9 +452,9 @@
             <div class="hr"></div>
 
             <section>
-                <h2>IMAGE</h2>
+                <h3>Image</h3>
                 <div>
-                    <h3>FIT</h3>
+                    <h3>Fit</h3>
 
                     <div>
                         <div>
@@ -485,7 +486,8 @@
 
                 <section>
                     <div>
-                        <h2>LEFT & RIGHT</h2>
+                        <h3>Left & Right
+                        </h3>
                         <img class="float-left" src="https://picsum.photos/200" alt="landscape">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima excepturi
@@ -541,7 +543,7 @@
             <div class="hr"></div>
 
             <section>
-                <h2>BOX</h2>
+                <h3>Box</h3>
                 <div class="box">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima excepturi
@@ -567,7 +569,7 @@
             <div class="hr"></div>
 
             <section>
-                <h2>PREFORMATTED</h2>
+                <h3>Preformated</h3>
                 <div>
 
                     <pre>
@@ -589,7 +591,7 @@ print 'It took ' + i + ' iterations to sort'
         </div>
         <footer class="main-footer container">
 
-            <div class="footer-form container">
+            <div class="footer-form">
                 <form action="submit">
                     <div class="flex column">
                         <label for="name">NAME</label>
@@ -614,7 +616,7 @@ print 'It took ' + i + ' iterations to sort'
             <div class="contact">
                 <div class="flex footer-item">
 
-                    <div class="h4">ADDRESS</div>
+                    <div class="h4">Address</div>
                     <div>
                         <address>
                             <ul>
@@ -626,21 +628,21 @@ print 'It took ' + i + ' iterations to sort'
                 </div>
 
                 <div class="flex footer-item">
-                    <div class="h4">PHONE</div>
+                    <div class="h4">Phone</div>
 
                     <a href="tel:+3200000000">(000) 000-0000</a>
                 </div>
 
 
                 <div class="flex footer-item">
-                    <div class="h4">EMAIL</div>
+                    <div class="h4">Email</div>
 
                     <a href="mailto:info@untitled.tld">info@untitled.tld</a>
                 </div>
 
 
                 <div class="flex footer-item">
-                    <div class="h4">SOCIAL</div>
+                    <div class="h4">Social</div>
 
                     <div class="flex">
                         <a class=" icon circled"><i class="fab fa-twitter"></i></a>

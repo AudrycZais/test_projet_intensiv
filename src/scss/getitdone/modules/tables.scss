@@ -18,7 +18,7 @@ $table-default-row-border: 2px solid $color-section-separator;
 
     td,th{
         padding: $table-default-cells-padding-s;
-        @media screen and (min-width:600px) {
+        @media screen and (min-width:map-get($screen-sizes, "m", 'breakpoint')) {
             padding:$table-default-cells-padding;
             
         }

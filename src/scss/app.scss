@@ -9,29 +9,30 @@ p{
     //Pour aligner les images en float
     margin: 0;
 }
-ul {
-    padding: 0;
-    list-style: none;
-}
 
 div{
     margin: 0;
     padding: .5rem 0 .5rem 0;
 }
 
-
 .main-content {
+    position: relative;
     background: $color-container;
     padding: 2em;
     margin-bottom: 0;
+    .h1{
+        white-space: wrap;
+    }
 }
 
 .main-footer {
+    position: relative;
     background-color: $color-neutral-1;
     margin-top: 0;
     color: $color-neutral-2;
 
     .footer-form{
+        padding: 1rem 2rem 1rem 2rem;
         label{
             font-family: $header;
             font-weight: 900;

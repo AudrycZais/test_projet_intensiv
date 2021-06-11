@@ -8,8 +8,8 @@
 
 $text: 'Merriweather', Georgia, serif;;
 $font-color-text: $color-primary;
-$font-size-text: 1.1em;
-$font-size-s-text: 0.8em;
+$font-size-text: 1rem;
+$font-size-s-text: 0.8rem;
 $font-weight-text: 300;
 $line-height-text: 1.65;
 
@@ -18,43 +18,43 @@ $line-height-text: 1.65;
 
 $header: 'Source Sans Pro', sans-serif;
 $font-color-h1: $color-primary;
-$font-size-h1: 2rem;
-$font-weight-h1: 700;
+$font-size-h1: 3rem;
+$font-weight-h1: 900;
 $line-height-h1: 1.2;
-$margin-h1: 0 0 .7em 0;
+$margin-h1: 0 0 .7rem 0;
 $letter-spacing-h1: -.025rem;
 
 $font-color-h2: $color-primary;
 $font-size-h2: 1.6rem;
-$font-weight-h2: 700;
+$font-weight-h2: 900;
 $line-height-h2: 1.5;
 $margin-h2: 0 0 .7rem 0;
 $letter-spacing-h2: -.025rem;
 
 $font-color-h3: $color-primary;
 $font-size-h3: 1.4rem;
-$font-weight-h3: 700;
+$font-weight-h3: 900;
 $line-height-h3: 1.5;
 $margin-h3: 0 0 .7rem 0;
 $letter-spacing-h3: -.025rem;
 
 $font-color-h4: $color-primary;
 $font-size-h4: 1.25rem;
-$font-weight-h4: 700;
+$font-weight-h4: 900;
 $line-height-h4: 1.2;
 $margin-h4: 0 0 .7rem 0;
 $letter-spacing-h4: -.025rem;
 
 $font-color-h5: $color-primary;
 $font-size-h5: 1.15rem;
-$font-weight-h5: 700;
+$font-weight-h5: 900;
 $line-height-h5: 1.2;
 $margin-h5: 0 0 .7rem 0;
 $letter-spacing-h5: -.025rem;
 
 $font-color-h6: $color-primary;
 $font-size-h6: 1.1rem;
-$font-weight-h6: 700;
+$font-weight-h6: 900;
 $line-height-h6: 1.2;
 $margin-h6: 0 0 .7rem 0;
 $letter-spacing-h6: -.025rem;
@@ -70,8 +70,8 @@ $link-hover-decoration: none;
 
     //LIST
 
-$ul-padding: 10px;
-$ol-padding: 20px;
+$ul-padding: 0px;
+$ol-padding: 15px;
 
     //CODE
 
@@ -144,6 +144,10 @@ section{
 
 //LISTS
 
+.list{
+    padding-right: 1rem;
+}
+
     //UL
 .ul{
     
@@ -159,7 +163,7 @@ section{
     //OL
 
 .ol{
-    padding: $ol-padding;
+    padding-left: $ol-padding;
 }
 
 
@@ -167,7 +171,7 @@ section{
 //ICONS
 
 .icon{
-
+    margin-right: 0.5rem;
     font-size: $icon-size;
     width: $icon-width;
     height: $icon-height;
@@ -258,6 +262,7 @@ h1,.h1 {
     line-height: $line-height-h1;
     margin: $margin-h1;
     letter-spacing:  $letter-spacing-h1;
+    text-transform: uppercase;
     
 }
 
@@ -269,6 +274,7 @@ h2,.h2 {
     line-height: $line-height-h2;
     margin: $margin-h2;
     letter-spacing:  $letter-spacing-h2;
+    text-transform: uppercase;
 }
 
 h3,.h3{
@@ -279,6 +285,7 @@ h3,.h3{
     line-height: $line-height-h3;
     margin: $margin-h3;
     letter-spacing:  $letter-spacing-h3;
+    text-transform: uppercase;
 }
 
 h4,.h4{
@@ -289,6 +296,7 @@ h4,.h4{
     line-height: $line-height-h4;
     margin: $margin-h4;
     letter-spacing:  $letter-spacing-h4;
+    text-transform: uppercase;
 }
 
 
@@ -300,6 +308,7 @@ h5,.h5{
     line-height: $line-height-h5;
     margin: $margin-h5;
     letter-spacing:  $letter-spacing-h5;
+    text-transform: uppercase;
 }
 
 h6,.h6{
@@ -310,6 +319,7 @@ h6,.h6{
     line-height: $line-height-h6;
     margin: $margin-h6;
     letter-spacing:  $letter-spacing-h6;
+    text-transform: uppercase;
 }
 
 
