@@ -1,3 +1,14 @@
+//VARIABLES
+
+    //BOXES
+$box-padding: 1rem;
+$box-border: 3px solid $color-section-separator;
+
+
+    //PRE
+$pre-background: $color-neutral-1;
+$pre-border: 2px solid $color-section-separator;
+
 //CONTAINER
 @each $size, $values in $screen-sizes {
     @media screen and (min-width: map-get($values, 'breakpoint')) {
@@ -9,11 +20,8 @@
           
     }
 }
-
-//VARIABLES
-
-$pre-background: $color-neutral-1;
-$pre-border: 2px solid $color-section-separator;
+//--------------------------------------------------------
+//CSS
 
 //TEXT-ALIGNMENTS
 
@@ -35,6 +43,13 @@ $pre-border: 2px solid $color-section-separator;
 .text-justify{
     text-align: justify;
     
+}
+
+//BOXES
+
+.box{
+    padding: $box-padding;
+    border: $box-border;
 }
 
 //PREFORMATED

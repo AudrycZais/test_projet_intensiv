@@ -1,7 +1,75 @@
-.input{
-    outline: 0;
-    border-radius: 0;
-    margin: 0 2rem 2rem 0;
-    border: 2px solid $color-section-separator;
-    padding: .5rem;
+//VARIABLES 
+
+    //INPUT-TEXT
+$input-text-width: 100%;
+$input-text-margin-right-but-last: 2rem;
+$input-text-margin: 1rem 0 1rem 0;
+$input-text-outline: 0;
+$input-text-border-radius: 0;
+$input-text-border: 2px solid $color-section-separator;
+$input-text-padding: 1rem;
+
+    //SELECT
+$select-width: 100%;
+$select-margin: 1rem 0 1rem 0;
+$select-outline: 0;
+$select-border-radius: 0;
+$select-broder: 2px solid $color-section-separator;
+$select-padding: 1rem;
+
+    //RADIO
+
+$radio-flex-direction: column;
+$radio-item-margin: 1rem 0 1rem 0;
+
+    //CHECKBOX
+$checkbox-flex-direction: column;
+$checkbox-item-margin: 1rem 0 1rem 0;
+
+//--------------------------------------------------------
+//CSS
+
+.input-box{
+   .input-text{
+    &:not(:last-of-type){
+        margin-right: $input-text-margin-right-but-last;
+    }
+   } 
 }
+
+.input-text{
+    width: $input-text-width;
+    margin: $input-text-margin;
+    outline: $input-text-outline;
+    border-radius: $input-text-border-radius;
+    border: $input-text-border;
+    padding: $input-text-padding;
+
+}
+
+.select{
+    width: $select-width;
+    margin: $select-margin;
+    outline: $select-outline;
+    border-radius: $select-border-radius;
+    border: $select-broder;
+    padding:  $select-padding;
+}
+
+.radio{
+    display: flex;
+    flex-direction: $radio-flex-direction;
+    .radio-item{
+        margin: $radio-item-margin;
+    }
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: $checkbox-flex-direction;
+    .checkbox-item{
+        margin: $checkbox-item-margin;
+    }
+}
+
+

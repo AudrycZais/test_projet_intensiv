@@ -5,9 +5,9 @@
 $screen-sizes: (
 's' : ('breakpoint': 0px, 'container-width':90%),
 
-'m' : ('breakpoint': 600px, 'container-width':85%),
+'m' : ('breakpoint': 600px, 'container-width':80%),
 
-'l' : ('breakpoint': 992px, 'container-width':70%),
+'l' : ('breakpoint': 992px, 'container-width':75%),
 
 'xl': ('breakpoint': 1200px, 'container-width':70%)
 );
@@ -34,6 +34,13 @@ $screen-sizes: (
 
 .flex{
     display: flex;
+}
+.row{
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
 }
 
 .wrap{

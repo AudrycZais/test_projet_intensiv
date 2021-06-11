@@ -1,17 +1,27 @@
 //VARIABLES TABLES DEFAULT
 
 $table-default-border-spacing: 0;
+$table-default-cells-padding-s: .5rem;
 $table-default-cells-padding: 1rem;
 $table-default-row-color-1: $color-neutral-1;
 $table-default-row-color-2: $color-container;
 $table-default-row-border: 2px solid $color-section-separator;
 
+//--------------------------------------------------------
+//CSS
+
 
 .table-default{
+    width: 100%;
+    margin: auto;
     border-spacing: $table-default-border-spacing;
 
     td,th{
-        padding: $table-default-cells-padding;
+        padding: $table-default-cells-padding-s;
+        @media screen and (min-width:600px) {
+            padding:$table-default-cells-padding;
+            
+        }
     }
 
     tbody{
@@ -36,17 +46,30 @@ $table-default-row-border: 2px solid $color-section-separator;
 //VARIABLES TABLES ALTERNATE
 
 $table-alternate-border-spacing: 0;
-$table-alternate-cells-padding: 1rem;
+$table-alternate-cells-padding-s: .5rem;
+$table-default-cells-padding: 1rem;
 $table-alternate-row-color-1: $color-neutral-1;
 $table-alternate-row-color-2: $color-container;
 $table-alternate-row-border: 2px solid $color-section-separator;
 
+
+//--------------------------------------------------------
+//CSS
+
+
 .alternate{
+    width: 100%;
+    margin: auto;
     border-spacing: 0;
     
 
     td,th{
-        padding: 1rem;
+        padding: $table-alternate-cells-padding-s;
+        @media screen and (min-width:600px) {
+            padding:$table-default-cells-padding;
+            
+        }
+        
     }
 
 

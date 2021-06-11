@@ -1,3 +1,43 @@
+$screen-sizes: (
+'s' : ('breakpoint': 0px, 'container-width':90%),
 
+'m' : ('breakpoint': 600px, 'container-width':85%),
+
+'l' : ('breakpoint': 992px, 'container-width':70%),
+
+'xl': ('breakpoint': 1200px, 'container-width':70%)
+);
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem 1rem;
+    justify-items: center;
+    align-items: center;
+    > * {
+        grid-column: span 12;
+        grid-row: span 1;
+    }
+}
+
+@each $size, $values in $screen-sizes {
+    @media screen and (min-width:map-get($values, 'breakpoint')) {
+        
+        @for $i from 1 through 12 {
+            .col-#{$size}-#{$i} {
+                grid-column: span + ' ' + #{$i};
+            }
+            .row-#{$size}-#{$i} {
+                grid-row: span + ' ' + #{$i};
+            }
+            @for $j from 0 through 11 {
+                .offset-#{$size}-#{$j}.col-#{$size}-#{$i} {
+                    grid-column: #{$j+1} / span + ' ' + #{$i};
+                }
+            }   
+        }
+    }    
+}
 
 

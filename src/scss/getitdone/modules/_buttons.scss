@@ -5,7 +5,7 @@
 $btn-font-family: $header;
 $btn-font-weight: 900;
 $btn-font-size: 1rem;
-$btn-padding: 1rem 2.5rem;
+$btn-padding: .5rem 1.5rem;
 $btn-maring: 1rem 1rem 1rem 0;
 $btn-icon-padding-right: 1rem;
 $btn-border: 3px solid $color-primary;
@@ -36,13 +36,28 @@ $btn-secondary-border-active: 3px solid $color-active;
 $btn-secondary-border-inactive: 3px solid $color-neutral-1;
 
 
-//-----------------------------------------------------------
-//-----------------------------------------------------------
+        //lARGE
 
+$btn-large-padding: 1rem 2.5rem;
+$btn-large-font-size: 1rem;
+
+        //SMALL
+
+$btn-small-padding: .5rem 1.5rem;
+$btn-small-font-size: .75rem;
+
+        //FIT
+
+$btn-fit-width: 50%;
+$btn-fit-center: center;
+
+
+//--------------------------------------------------------
+//CSS
 .btn{
     display: inline-block;
-    padding: 1rem 2.5rem;
-    margin: 1rem 1rem 1rem 0;
+    padding: $btn-padding;
+    margin: $btn-maring;
     font-family: $btn-font-family;
     font-weight: $btn-font-weight;
     font-size:$btn-font-size;
@@ -111,19 +126,19 @@ $btn-secondary-border-inactive: 3px solid $color-neutral-1;
     }
 
     &.large{
-        padding: 1rem 3rem;
-        font-size: 1.5rem;
+        padding:$btn-large-padding; 
+        font-size: $btn-large-font-size;
     }
 
     &.small{
-        padding: .5rem 2rem;
-        font-size: 0.75rem;
+        padding:$btn-small-padding;
+        font-size:$btn-small-font-size;
     }
 
 
     &.fit{
-        width: 100%;
-        text-align: center;
+        width: $btn-fit-width;
+        text-align: $btn-fit-center;
     }
 
 }

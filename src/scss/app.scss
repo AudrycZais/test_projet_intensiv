@@ -5,28 +5,104 @@ body {
     
 }
 
-.main-header {
+p{
+    //Pour aligner les images en float
+    margin: 0;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
 
+div{
+    margin: 0;
+    padding: .5rem 0 .5rem 0;
 }
 
 
 .main-content {
     background: $color-container;
     padding: 2em;
+    margin-bottom: 0;
 }
 
 .main-footer {
+    background-color: $color-neutral-1;
+    margin-top: 0;
+    color: $color-neutral-2;
+
+    .footer-form{
+        label{
+            font-family: $header;
+            font-weight: 900;
+        }
+
+        .input-text{
+            background: $color-neutral-1;
+        }
+        .secondary{
+            color: $color-neutral-2;
+            border: 3px solid $color-neutral-2;
+            &:hover{
+                color: $color-hover;
+                border: 3px solid $color-hover;
+            }
+
+            &:active{
+                color: $color-active;
+                border: 3px solid $color-active;
+            }
+        }
+    }
+
+    .contact{
+        padding: 0;
+        .footer-item{
+            border-top: 3px solid $color-section-separator;
+            align-items: center;
+            justify-items: center;
+            padding: 1rem 2rem 1rem 2rem;
+            div{
+                margin: 0 2rem 0 0;
+            }
+        }
+    }
+    
+    
+    .h4{
+        color: $color-neutral-2;
+    }
+
+    address{
+        font-style: normal;
+    }
+
+    a{
+        color: $color-neutral-2;
+        &:hover{
+            color: $color-hover;
+        }
+    }
 
 }
 
-ul {
-    padding: 0;
-    list-style: none;
-}
+
+
+
 
 .footer{
     text-align: center;
     padding: 3em 0 3em 0;
     color: $color-neutral-2;
+    font-family: $header;
+    font-weight: 900;
+    a{
+        color: $color-neutral-2;
+        &:hover{
+            color: $color-hover;
+        }
+    }
 }
+
+
 
