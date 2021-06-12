@@ -1,109 +1,182 @@
-@import './getitdone/index.scss';
+@import "./getitdone/index.scss";
 
 body {
-    background: radial-gradient(circle at top, $color-secondary  0%, $color-primary 10%);
-    
+    background: radial-gradient(circle at top, $color-secondary 0%, $color-primary 10%);
 }
 
-p{
+body > header{
+    margin: 2rem 0;
+    color: $color-container;
+    h1{
+        color: $color-container;
+    }
+    a{
+        text-transform: uppercase;
+    }
+    
+    .circled{
+        margin: auto;
+        color: $color-container;
+        border: 3px solid $color-container;
+        &:hover{
+            color: $color-hover;
+            border: 3px solid $color-hover;
+        }
+    }
+    .btn{
+        .secondary{
+            color: $color-container;
+            border: 3px solid $color-container;
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+p {
     //Pour aligner les images en float
     margin: 0;
 }
 
-div{
+div {
     margin: 0;
-    padding: .5rem 0 .5rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.main-header{
+    margin: 0 2rem;
 }
 
 .main-content {
     position: relative;
     background: $color-container;
-    padding: 2em;
+    margin: 0 2rem;
+    padding: 2rem;
+    @media screen and (min-width: map-get($screen-sizes, "m", 'breakpoint')) {
+        padding: 4rem;
+    }
     margin-bottom: 0;
-    .h1{
+    .h1 {
         white-space: wrap;
+    }
+}
+
+.articles-section.grid{
+    margin-bottom: 0;
+}
+
+.footer-pagination{
+    border-top: 3px solid $color-section-separator;
+}
+.pagination{
+    
+    display: flex;
+    justify-content: center;
+    .page{
+        border: solid 2px;
+        display: inline-block;
+        font-family: $header;
+        font-size: 0.8rem;
+        font-weight: 900;
+        height: 3rem;
+        letter-spacing: 0.075em;
+        line-height: calc(3rem - 4px);
+        margin-left: -2px;
+        min-width: 3rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    .next-page{
+        border: solid 2px;
+        display: inline-block;
+        font-family: "$header";
+        font-size: 0.8rem;
+        font-weight: 900;
+        height: 3rem;
+        letter-spacing: 0.075em;
+        line-height: calc(3rem - 4px);
+        margin-left: -2px;
+        min-width: 3rem;
+        text-align: center;
+        text-decoration: none;
+        
     }
 }
 
 .main-footer {
     position: relative;
     background-color: $color-neutral-1;
-    margin-top: 0;
+    margin: 0 2rem;
     color: $color-neutral-2;
 
-    .footer-form{
+    .footer-form {
         padding: 1rem 2rem 1rem 2rem;
-        label{
+        label {
             font-family: $header;
             font-weight: 900;
         }
 
-        .input-text{
+        .input-text {
             background: $color-neutral-1;
         }
-        .secondary{
+        .secondary {
             color: $color-neutral-2;
             border: 3px solid $color-neutral-2;
-            &:hover{
+            &:hover {
                 color: $color-hover;
                 border: 3px solid $color-hover;
             }
 
-            &:active{
+            &:active {
                 color: $color-active;
                 border: 3px solid $color-active;
             }
         }
     }
 
-    .contact{
-        padding: 0;
-        .footer-item{
-            border-top: 3px solid $color-section-separator;
-            align-items: center;
-            justify-items: center;
-            padding: 1rem 2rem 1rem 2rem;
-            div{
-                margin: 0 2rem 0 0;
-            }
+    .footer-item {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        border-top: 3px solid $color-section-separator;
+        border-left: 3px solid $color-section-separator;
+        padding: 1rem 2rem 1rem 2rem;
+        div {
+            margin: 0 2rem 0 0;
+        }
+        ul{
+            margin: 0;
         }
     }
-    
-    
-    .h4{
+
+    .h4 {
         color: $color-neutral-2;
     }
 
-    address{
+    address {
         font-style: normal;
     }
 
-    a{
+    a {
         color: $color-neutral-2;
-        &:hover{
+        &:hover {
             color: $color-hover;
         }
     }
-
 }
 
-
-
-
-
-.footer{
+.footer {
     text-align: center;
     padding: 3em 0 3em 0;
     color: $color-neutral-2;
     font-family: $header;
     font-weight: 900;
-    a{
+    a {
         color: $color-neutral-2;
-        &:hover{
+        &:hover {
             color: $color-hover;
         }
     }
 }
-
-
-

@@ -7,7 +7,7 @@
     overflow: hidden;
     position: relative;
 
-    ul.links{
+    ul.menu-links{
         display: flex;
         align-content:center;
         list-style: none;
@@ -28,8 +28,7 @@
                 color: $color-container;
                 text-decoration: none;
                 &:hover{
-                    color: $color-hover;
-                    background: $color-container;
+                    background: #ffffff3b;
                 }
                 
                 &.active{
@@ -45,7 +44,7 @@
         
     }
     
-    ul.socials{
+    ul.menu-socials{
         display: flex;
         align-content:center;
         

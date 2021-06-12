@@ -3,19 +3,29 @@
 
 
 $screen-sizes: (
-'s' : ('breakpoint': 0px, 'container-width':90%),
+'xs' : ('breakpoint': 0px, 'container-width':100%),
 
-'m' : ('breakpoint': 600px, 'container-width':90%),
+'s' : ('breakpoint': 556px, 'container-width':90%),
 
-'l' : ('breakpoint': 992px, 'container-width':90%),
+'m' : ('breakpoint': 800px, 'container-width':85%),
 
-'xl': ('breakpoint': 1200px, 'container-width':90%)
+'l' : ('breakpoint': 960px, 'container-width':80%),
+
+'xl': ('breakpoint': 1140px, 'container-width':75%)
+
 );
 
 //BOX-SIZING
 
 *{
     box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 // DISPLAY SECTION

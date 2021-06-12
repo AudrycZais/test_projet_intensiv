@@ -1,0 +1,23 @@
+article{
+    width: 100%;
+    padding: 3rem;
+    margin: 0;
+    
+}
+
+
+.articles-section{
+    .article{
+        border-top: 3px solid $color-section-separator;
+        border-left: 3px solid $color-section-separator;
+        &:nth-of-type(odd){
+            border-right: 3px solid $color-section-separator;
+    
+    
+        }
+
+    }
+}
+
+
+

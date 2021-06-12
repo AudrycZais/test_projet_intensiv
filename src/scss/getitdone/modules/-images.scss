@@ -1,8 +1,9 @@
 //VARIABLES
-
+$img-margin: auto;
+$img-padding: .5rem;
 $img-float-left-margin: 0 1rem 1rem 0;
 $img-float-right-margin: 0 0 1rem 1rem;
-$img-float-width: 40%; 
+$img-float-width: 20%; 
 
 
 //--------------------------------------------------------
@@ -10,6 +11,8 @@ $img-float-width: 40%;
 
 img{
     width: 100%;
+    margin: img-margin;
+    padding: $img-padding;
 }
 
 .float-left{

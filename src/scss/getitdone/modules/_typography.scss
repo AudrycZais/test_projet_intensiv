@@ -68,6 +68,14 @@ $link-decoration: underline dotted;
 $link-hover-color: $color-hover;
 $link-hover-decoration: none;
 
+$link-header-color: $color-container;
+$link-header-decoration: none;
+
+$link-header-hover-color: $color-hover;
+$link-header-hover-decoration: none;
+
+$link-btn-decoration: none;
+
     //LIST
 
 $ul-padding: 0px;
@@ -92,7 +100,7 @@ $margin-hr: 2rem 0;
     //NORMAL
 
 $icon-size: 1rem;
-$icon-size-from-m: 1.3rem;
+$icon-size-from-m: .8rem;
 $icon-width: 30px;
 $icon-width-from-m: 40px;
 $icon-height: 30px;
@@ -173,13 +181,8 @@ section{
 .icon{
     margin-right: 0.5rem;
     font-size: $icon-size;
-    width: $icon-width;
-    height: $icon-height;
-    @media screen and (min-width: map-get($screen-sizes, "m", 'breakpoint')) {
-        font-size: $icon-size-from-m;
-        width: $icon-width-from-m;
-        height: $icon-height-from-m ; 
-    }
+    width: 2rem;
+    height: 2rem;
 
     display: flex;
     justify-content: center;
@@ -191,6 +194,7 @@ section{
 
         border: $icon-circled-border;
         border-radius: $icon-circled-border-radius;
+        font-size: .8rem;
 
         &:hover{
             border: $icon-circled-border-hover;
@@ -208,13 +212,24 @@ section{
 
 
 // LINKS
-a, .link{
+.link{
     color: $link-color;
     text-decoration: $link-decoration;
     &:hover{
         color:$link-hover-color;
         text-decoration: $link-hover-decoration;
     }
+
+    
+}
+
+.link-header{
+    color: $link-header-color;
+    text-decoration: $link-header-decoration;
+&:hover{
+    color:$link-header-hover-color;
+    text-decoration: $link-header-hover-decoration;
+}
 }
 
 //HR
@@ -249,6 +264,33 @@ code {
     padding: $definition-padding;
 }
 
+//INFO ARTICLES
+
+.info{
+    display: block;
+    text-align: center;
+    font-size: $font-size-s-text;
+    position: relative;
+}
+
+.main-article{
+    .info::before{
+        left: 0;
+    }
+    
+    .info::after{
+        right: 0;
+    }
+    
+    .info::before,.info::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        width: calc(50% - 6.5rem);
+        border-top: solid 3px $color-section-separator;
+    }
+}
 
 
 //HEADERS

@@ -1,20 +1,6 @@
-$screen-sizes: (
-'s' : ('breakpoint': 0px, 'container-width':90%),
-
-'m' : ('breakpoint': 600px, 'container-width':85%),
-
-'l' : ('breakpoint': 992px, 'container-width':70%),
-
-'xl': ('breakpoint': 1200px, 'container-width':70%)
-);
-
-
 .grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 2rem 2rem;
-    justify-items: center;
-    align-items: center;
     > * {
         grid-column: span 12;
         grid-row: span 1;
