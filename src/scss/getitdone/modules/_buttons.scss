@@ -37,6 +37,8 @@ $btn-secondary-border-active: 3px solid $color-active;
 $btn-secondary-border-inactive: 3px solid $color-neutral-1;
 $btn-secondary-border-header: 3px solid $color-container;
 $btn-secondary-text-color-header: $color-primary;
+$btn-secondary-font-size-header: 1.5rem;
+$btn-sencondary-padding-header: .5rem 1rem;
 
 
         //lARGE
@@ -115,6 +117,8 @@ $btn-fit-center: center;
             border: $btn-secondary-border-header;
             color:  $color-container;
             margin: 0;
+            padding: $btn-sencondary-padding-header;
+            font-size: $btn-secondary-font-size-header;
             &:hover{ 
                 border: $btn-secondary-border-hover;
                 color: $btn-secondary-text-color-hover;

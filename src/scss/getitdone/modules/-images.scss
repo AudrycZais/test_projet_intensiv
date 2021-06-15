@@ -4,25 +4,38 @@ $img-padding: .5rem;
 $img-float-left-margin: 0 1rem 1rem 0;
 $img-float-right-margin: 0 0 1rem 1rem;
 $img-float-width: 20%; 
+$img-float-min-width: 10rem;
 
 
 //--------------------------------------------------------
 //CSS
 
+figcaption{
+    display: none;
+}
+figure{
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
 img{
     width: 100%;
     margin: img-margin;
     padding: $img-padding;
 }
 
+
+
 .float-left{
     float:left;
     margin: $img-float-left-margin;
     width: $img-float-width;
+    min-width: 100px;
 }
 
 .float-right{
     float: right;
     margin: $img-float-right-margin;
     width: $img-float-width;
+    min-width: 100px;
 }

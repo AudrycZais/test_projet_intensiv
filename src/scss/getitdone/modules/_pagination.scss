@@ -1,0 +1,46 @@
+.pagination{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+
+    .page{
+        color: $color-primary;
+        position: relative;
+        display: block;
+        height: 3rem;
+        line-height: 3rem;
+        margin-left: -3px;
+        width: 3rem;
+        position: relative;
+        text-align: center;
+        border: 3px solid $color-primary;
+        font-family: $header;
+        font-weight: 600;
+        &:hover{
+           z-index: 1; 
+           border: 3.2px solid $color-hover;
+           color: $color-hover;;
+        }
+    }
+
+    .next{
+        color: $color-primary;
+        position: relative;
+        display: block;
+        height: 3rem;
+        line-height: 3rem;
+        margin-left: -3px;
+        width: 3rem;
+        position: relative;
+        text-align: center;
+        border: 3px solid $color-primary;
+        font-family: $header;
+        font-weight: 600;
+        &:hover{
+            z-index: 1; 
+           border: 3.2px solid $color-hover;
+           color: $color-hover;;
+        }
+    }
+
+}

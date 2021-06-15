@@ -1,7 +1,13 @@
 article{
     width: 100%;
-    padding: 3rem;
+    padding: 2rem;
+    @media screen and (min-width: map-get($screen-sizes, "m", 'breakpoint')) {
+        padding: 3rem;
+    }
     margin: 0;
+    p{
+        margin-bottom: 1rem;
+    }
     
 }
 
@@ -14,6 +20,13 @@ article{
             border-right: 3px solid $color-section-separator;
     
     
+        }
+        &:last-of-type{
+            border-bottom: 3px solid $color-section-separator;
+        }
+
+        &:nth-last-of-type(2){
+            border-bottom: 3px solid $color-section-separator;
         }
 
     }

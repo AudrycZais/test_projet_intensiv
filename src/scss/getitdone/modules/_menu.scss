@@ -1,11 +1,17 @@
 .menu{
+    padding: 0;
     color: $color-container;
-    display: flex;
+    display: none;
+    @media screen and (min-width: map-get($screen-sizes, "m", 'breakpoint')) {
+        display: flex;
+
+              
+    }
     justify-content: space-between;
     background: #ffffff2d;
     margin: 0 auto 0 auto;
-    overflow: hidden;
     position: relative;
+
 
     ul.menu-links{
         display: flex;
@@ -16,8 +22,8 @@
         text-transform: uppercase;
         
         li{
-            display: block;
             a{  
+
                 width: 100%;
                 height: 100%;
                 font-family: $header;
@@ -54,7 +60,6 @@
         text-transform: uppercase;
         
         li{
-            display: block;
             a{  
                 width: 100%;
                 height: 100%;
@@ -73,6 +78,79 @@
 
         
     }
+}
 
+
+.menu-toggle{
+    
+    display: block;
+    @media screen and (min-width: map-get($screen-sizes, "m", 'breakpoint')) {
+        display: none;   
+        
+              
+    }
+    
+    position: fixed;
+    padding: .5rem;
+    background: #e6e6e6;
+    z-index: 2;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-family: $header;
+    font-weight: 600;
+}
+
+.side-menu{
+    font-size: 1rem;
+    padding: 0 2rem;
+    display: block;
+    width: 20rem;
+    height: 100vh;
+    background: $color-container;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: -20rem;
+    transition: all 900ms ease-in-out;
+    &.hide{
+        right: 0;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    
+    a{
+        color: $color-primary;
+        font-family: $header;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .close-menu{
+        font-size: 1rem;
+        color: $color-neutral-2;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        &:hover{
+            color:$color-hover;
+        }
+    }
+
+    .sidemenu-links{
+        li:not(last-of-type){
+            display: block;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid $color-section-separator;
+        }
+    
+    }
+
+    .sidemenu-socials{
+
+        display: flex;        
+    }
 
 }

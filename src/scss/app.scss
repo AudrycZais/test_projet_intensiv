@@ -1,7 +1,7 @@
 @import "./getitdone/index.scss";
 
 body {
-    background: radial-gradient(circle at top, $color-secondary 0%, $color-primary 10%);
+    background: radial-gradient(circle at top, $color-secondary 0%, $color-primary 5%)repeat-y;
 }
 
 body > header{
@@ -42,7 +42,7 @@ p {
 
 div {
     margin: 0;
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 0;
 }
 
 .main-header{
@@ -63,46 +63,18 @@ div {
     }
 }
 
-.articles-section.grid{
+.main-content-articles {
+    position: relative;
+    background: $color-container;
+    margin: 0 2rem;
     margin-bottom: 0;
+    .h1 {
+        white-space: wrap;
+    }
 }
 
-.footer-pagination{
-    border-top: 3px solid $color-section-separator;
-}
-.pagination{
-    
-    display: flex;
-    justify-content: center;
-    .page{
-        border: solid 2px;
-        display: inline-block;
-        font-family: $header;
-        font-size: 0.8rem;
-        font-weight: 900;
-        height: 3rem;
-        letter-spacing: 0.075em;
-        line-height: calc(3rem - 4px);
-        margin-left: -2px;
-        min-width: 3rem;
-        text-align: center;
-        text-decoration: none;
-    }
-    .next-page{
-        border: solid 2px;
-        display: inline-block;
-        font-family: "$header";
-        font-size: 0.8rem;
-        font-weight: 900;
-        height: 3rem;
-        letter-spacing: 0.075em;
-        line-height: calc(3rem - 4px);
-        margin-left: -2px;
-        min-width: 3rem;
-        text-align: center;
-        text-decoration: none;
-        
-    }
+.articles-section.grid{
+    margin-bottom: 0;
 }
 
 .main-footer {
