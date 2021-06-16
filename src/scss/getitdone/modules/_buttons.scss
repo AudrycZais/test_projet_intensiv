@@ -88,6 +88,7 @@ $btn-fit-center: center;
         &.inactive{
             background: $btn-primary-color-inactive;
             border: $btn-primary-border-inactive;
+            pointer-events: none;
             &:hover{
                 background: $btn-primary-color-inactive;
                 border: $btn-primary-border-inactive;
@@ -128,6 +129,7 @@ $btn-fit-center: center;
         &.inactive{
             border: $btn-secondary-border-inactive;
             color: $btn-secondary-text-color-inactive;
+            pointer-events: none;
             &:hover{
                 border: $btn-secondary-border-inactive;
                 color: $btn-secondary-text-color-inactive;

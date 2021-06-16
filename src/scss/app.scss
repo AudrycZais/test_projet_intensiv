@@ -1,7 +1,7 @@
 @import "./getitdone/index.scss";
 
 body {
-    background: radial-gradient(circle at top, $color-secondary 0%, $color-primary 5%)repeat-y;
+    background: radial-gradient(circle at top, $color-secondary 0%, $color-primary 20rem)repeat-y;
 }
 
 body > header{
@@ -9,13 +9,14 @@ body > header{
     color: $color-container;
     h1{
         color: $color-container;
+        margin-bottom: 1rem;
     }
     a{
         text-transform: uppercase;
     }
     
     .circled{
-        margin: auto;
+        margin: 1rem auto;
         color: $color-container;
         border: 3px solid $color-container;
         &:hover{
@@ -58,9 +59,6 @@ div {
         padding: 4rem;
     }
     margin-bottom: 0;
-    .h1 {
-        white-space: wrap;
-    }
 }
 
 .main-content-articles {
@@ -68,9 +66,6 @@ div {
     background: $color-container;
     margin: 0 2rem;
     margin-bottom: 0;
-    .h1 {
-        white-space: wrap;
-    }
 }
 
 .articles-section.grid{

@@ -20,8 +20,10 @@ figure{
 }
 img{
     width: 100%;
-    margin: img-margin;
+    margin: $img-margin;
     padding: $img-padding;
+    height: inherit;
+    object-fit: cover;
 }
 
 

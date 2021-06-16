@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Post</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./scss/app.scss">
 </head>
@@ -64,7 +64,7 @@
         <div class="main-content">
             <article class="main-article">
                 <header>
-                    <span class="info">April 25, 2017 | Author: Crimpson</span>
+                    <span class="info">April 25, 2017 | Author: John Crimpson</span>
                     <h2 class="h1 text-center">And this is a Intensiv' Headline</h2>
                     <p class="text-center">Aenan ornare velit lacus varius enim ullamcorper proin aliquam
                         facilisis
@@ -105,7 +105,7 @@
         <footer class="main-footer grid">
 
             <div class="footer-form col-l-6 row-m-4">
-                <form action="submit">
+                <form action="./traitement.html" type="post">
                     <div class="flex column">
                         <label for="name">NAME</label>
                         <input class="input-text" type="text" name="name" id="name">
@@ -174,7 +174,32 @@
     </footer>
 
 
+
     <script src="./js/app.js"></script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "article",
+          "name": "Post intensiv",
+          "author": {
+            "@type" : "Person",
+            "givenName" : "John",
+            "familyName": "Crimpson"
+
+        },
+          "datePublished": "April 25, 2017",
+          "description": "Un bel article de Crimpson",
+          "headline" : "And this is a intensiv's headline",
+          "image" : "https://picsum.photos/200",
+          "publisher" : {
+              "@type" : "Person",
+              "givenName" : "John",
+              "familyName": "Crimpson"
+
+          }
+        }
+        </script>
 
 
 </body>

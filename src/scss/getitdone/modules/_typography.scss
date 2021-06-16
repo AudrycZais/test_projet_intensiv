@@ -101,10 +101,13 @@ $margin-hr: 2rem 0;
 
 $icon-size: 1rem;
 $icon-size-from-m: .8rem;
-$icon-width: 30px;
-$icon-width-from-m: 40px;
-$icon-height: 30px;
-$icon-height-from-m: 40px;
+$icon-width: 2rem;
+$icon-width-from-m: 1.6rem;
+$icon-height: 2rem;
+$icon-height-from-m: 1.6rem;
+$pointer-event: pointer;
+$icon-text-decoration: none;
+$icon-margin-right: .5rem;
 
 
 
@@ -179,24 +182,32 @@ section{
 //ICONS
 
 .icon{
-    margin-right: 0.5rem;
-    font-size: $icon-size;
-    width: 2rem;
-    height: 2rem;
+    
 
+    margin-right: $icon-margin-right;
+    font-size: $icon-size;
+    width: $icon-width;
+    height: $icon-height;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1rem;
-    text-decoration: none;
+    margin-right: $icon-margin-right;
+    text-decoration: $icon-text-decoration;
+    cursor: $pointer-event;
+
+    &:hover{
+        color: $color-hover;
+    }
 
     &.circled{
 
         border: $icon-circled-border;
         border-radius: $icon-circled-border-radius;
-        font-size: .8rem;
+        font-size: $icon-circled-size;
+        cursor: pointer;
 
         &:hover{
+            color: $color-hover;
             border: $icon-circled-border-hover;
         }
     
@@ -287,7 +298,7 @@ code {
         display: block;
         position: absolute;
         top: 50%;
-        width: calc(50% - 6.5rem);
+        width: calc(50% - 7.5rem);
         border-top: solid 3px $color-section-separator;
     }
 }
